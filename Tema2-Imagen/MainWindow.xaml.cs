@@ -24,5 +24,38 @@ namespace Tema2_Imagen
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            if (opAltaRadioButton.IsChecked == true)
+            {
+                starImage.Opacity = 0.9;
+            }
+            else if (opMediaRadioButton.IsChecked == true)
+            {
+                starImage.Opacity = 0.5;
+            }
+            else if (opBajaRadioButton.IsChecked == true)
+            {
+                starImage.Opacity = 0.1;
+            }
+
+            if (rellenoRadioButton.IsChecked == true)
+            {
+                starImage.Stretch = Stretch.Fill;
+            }
+            else if (uniformeRadioButton.IsChecked == true)
+            {
+                starImage.Stretch = Stretch.Uniform;
+            }
+            else if (rellenoUniformeRadioButton.IsChecked == true)
+            {
+                starImage.Stretch = Stretch.UniformToFill;
+            }
+            else if (noneRadioButton.IsChecked == true)
+            {
+                starImage.Stretch = Stretch.None;
+            }
+        }
     }
 }

@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="491"/>
-        <TextBlock HorizontalAlignment="Left" Margin="647,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Opacidad"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="647,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Ajuste"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,89,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,109,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,129,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,170,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,190,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,210,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="635,230,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="starImage" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="491" Source="assets/episodioIV.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="590,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run FontWeight="Bold" Text="Opacidad"/><LineBreak/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="590,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run FontWeight="Bold" Text="Ajuste"/></TextBlock>
+        <RadioButton x:Name="opAltaRadioButton" Content="Alta" HorizontalAlignment="Left" Margin="578,94,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="opacity"/>
+        <RadioButton x:Name="opMediaRadioButton" Content="Media" HorizontalAlignment="Left" Margin="578,114,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="opacity"/>
+        <RadioButton x:Name="opBajaRadioButton" Content="Baja" HorizontalAlignment="Left" Margin="578,134,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="opacity"/>
+        <RadioButton x:Name="rellenoRadioButton" Content="Relleno (Fill)" HorizontalAlignment="Left" Margin="578,213,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="ajuste"/>
+        <RadioButton x:Name="uniformeRadioButton" Content="Uniforme (Uniform)" HorizontalAlignment="Left" Margin="578,233,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="ajuste"/>
+        <RadioButton x:Name="rellenoUniformeRadioButton" Content="Relleno Uniforme (UniformToFill)" HorizontalAlignment="Left" Margin="578,253,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="ajuste"/>
+        <RadioButton x:Name="noneRadioButton" Content="Sin ajuste (None)" HorizontalAlignment="Left" Margin="578,273,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="ajuste"/>
 
     </Grid>
 </Window>
