@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_Imagen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Icon="recursos/icon.ico">
     <Grid>
         <Image x:Name="starImage" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="491" Source="assets/episodioIV.jpg"/>
         <TextBlock HorizontalAlignment="Left" Margin="590,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run FontWeight="Bold" Text="Opacidad"/><LineBreak/></TextBlock>
